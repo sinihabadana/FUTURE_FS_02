@@ -7,7 +7,7 @@ function Dashboard({ refresh }) {
   const [statusFilter, setStatusFilter] = useState("");
   const [notesData, setNotesData] = useState({});
   const fetchLeads = async () => {
-    const res = await axios.get("http://localhost:5000/api/leads");
+    const res = await axios.get("https://mini-crm-backend-f2br.onrender.com/api/leads");
     setLeads(res.data);
   };
 
@@ -16,12 +16,12 @@ function Dashboard({ refresh }) {
   }, [refresh]);
 
   const updateStatus = async (id, status) => {
-    await axios.put(`http://localhost:5000/api/leads/${id}`, { status });
+    await axios.put(`https://mini-crm-backend-f2br.onrender.com/api/leads/${id}`, { status });
     fetchLeads();
   };
   
    const updateNotes = async (id, notes) => {
-        await axios.put(`http://localhost:5000/api/leads/${id}`, { notes });
+        await axios.put(`https://mini-crm-backend-f2br.onrender.com/api/leads/${id}`, { notes });
         fetchLeads();
         // setNotesData((prev) => ({ ...prev, [id]: "" }));
     };

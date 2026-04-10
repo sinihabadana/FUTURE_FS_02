@@ -16,7 +16,7 @@ function LeadForm({ setRefresh }) {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/leads/add", form);
+      await axios.post("https://mini-crm-backend-f2br.onrender.com/api/leads/add", form);
       alert("Lead Added!");
       setForm({ name: "", email: "", source: "" });
       setRefresh(prev => !prev); 
