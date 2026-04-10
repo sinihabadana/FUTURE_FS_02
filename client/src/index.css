@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form */
+/* 📦 Form Container */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+}
+button {
+  padding: 8px 12px;
+  background-color: rgb(237, 165, 165);
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* Status Colors */
+.new {
+  color: blue;
+}
+
+.contacted {
+  color: orange;
+}
+
+.converted {
+  color: green;
+}
+
+button:nth-child(1) {
+  background: orange;
+  color: white;
+}
+
+button:nth-child(2) {
+  background: green;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+/* Search input */
+.filters input {
+  flex: 3; /* takes more space */
+  padding: 10px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Dropdown */
+.filters select {
+  flex: 1; /* smaller width */
+  padding: 10px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filters input,
+.filters select {
+  box-sizing: border-box;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+h1 {
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+/* Notes textarea */
+textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.card button:last-child {
+  background: #007bff;
+  color: white;
+}
+
+form {
+  margin: 10px auto;
+}
+
+/* form {
+  width: 100%;
+  max-width: 350px;
+} */
+
+button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* 🌐 Main Container */
+.container {
+  width: 100%;
+  max-width: 100%; /* remove restriction */
+  padding: 5px 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 5px;
+}
+/* 
+h1 {
+  margin: auto;
+} */
+
+/* Logout Button */
+.logout-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: green;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* Section spacing */
+.section {
+  margin-top: 15px;
+}
+
+/* Divider */
+hr {
+  margin: 20px 0;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  /* justify-content: center; */
+}
+h2 {
+  text-align: center;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.login-container {
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+}
